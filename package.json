@@ -1,0 +1,19 @@
+{
+  "name": "data-guide",
+  "version": "0.0.0",
+  "description": "A guide for data at DB1 Group.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "packageManager": "yarn@4.5.3",
+  "engines": {
+    "node": "~20"
+  }
+}
