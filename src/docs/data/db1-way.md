@@ -24,7 +24,7 @@ Mas há um grande desafio: quando diferentes áreas trabalham com dados de forma
 Implementar um modelo de governança de dados eficaz é essencial para aumentar a eficiência e a precisão das análises de dados. Observe a escala no modelo de maturidade de governança do Gartner abaixo, com nossas ferramentas e metodologias internas, buscamos fazer uma avaliação inicial e escalonar, progredir para os níveis mais altos dentro de cada projeto.
 
 ![Ranges de maturidade](/img/docs/gartner.jpg)
-Fonte: https://hitechnectar.com/blogs/data-governance-maturity-models-framework/.
+<small>Fonte: https://hitechnectar.com/blogs/data-governance-maturity-models-framework/.</small>
 
 ## Nossa Abordagem
 
@@ -41,11 +41,11 @@ Acreditamos que a chave está em dois pilares: boas **métricas** de qualidade d
 - **Monitoramento de SLA e Linhagem de Dados** para rastrear e otimizar a movimentação dos dados.
 
 **Processo** é a forma como desenvolvemos soluções de dados. Parece algo generalista? Parte disso está descrito na seção de "melhores práticas" deste site, mas entendemos esse processo como a maneira de lidar com:
- - **Gestão de ambientes**: para orquestrar e automatizar a entrega de pipelines de dados;
- - **Qualidade do código**: garantindo boas práticas em desenvolvimento SQL, Spark, Python e outras linguagens utilizadas;
- - **Gerenciamento de testes**: para validar integridade, consistência e confiabilidade dos dados;
- - **Monitoramento de dados e pipelines**: para garantir a observabilidade, detectar anomalias e evitar falhas em produção;
- - **Infraestrutura como código**: para provisionar e escalar ambientes de dados de forma automatizada.
+ - **Gestão de ambientes** para orquestrar e automatizar a entrega de pipelines de dados;
+ - **Qualidade do código** garantindo boas práticas em desenvolvimento SQL, Spark, Python e outras linguagens utilizadas;
+ - **Gerenciamento de testes** para validar integridade, consistência e confiabilidade dos dados;
+ - **Monitoramento de dados e pipelines** para garantir a observabilidade, detectar anomalias e evitar falhas em produção;
+ - **Infraestrutura como código** para provisionar e escalar ambientes de dados de forma automatizada.
 
 Para gerenciar tudo isso, criamos um produto interno chamado **Data HealthPanel**, que consolida informações sobre a qualidade dos dados, a confiabilidade das pipelines e as métricas das bases que a equipe mantém.
 
@@ -63,7 +63,7 @@ Utilizamos o **Data HealthPanel** para avaliar a saúde dos nossos dados, base
 
 Para cada novo projeto ou integração, aplicamos nosso framework para assegurar que as melhores práticas sejam implementadas desde o início. Para cada etapa “concluída” nos processos sugeridos, uma pontuação é atribuída. Permitindo um máximo de 100 pontos para métricas e processos saudáveis.
 
-Finalmente, calculamos a pontuação de saúde do ambiente usando a média desses pilares, sendo responsabilidade dos engenheiros líderes no DB1 manter essa pontuação o mais alta possível. Ainda contamos com um sistema de "ranges" para identificar projetos e equipes que exigem atenção prioritária:
+Finalmente, calculamos a pontuação de saúde do ambiente usando a média desses pilares, sendo responsabilidade dos engenheiros líderes na DB1 manter essa pontuação o mais alta possível. Ainda contamos com um sistema de "ranges" para identificar projetos e equipes que exigem atenção prioritária:
 
 
 |   Saúde do Ambiente    |
@@ -78,4 +78,4 @@ Dados ruins geram decisões ruins. Decisões ruins resultam em desperdício de t
 
 Nossa responsabilidade é garantir que os dados sejam um ativo estratégico e não um obstáculo. Por isso, adotamos uma abordagem única e integrada, sempre buscando melhorar e evoluir nossos processos.
 
-Longe do Hype, no DB1, dados são mais do que números – são a base do nosso sucesso.
+Longe do Hype, na DB1, dados são mais do que números – são a base do nosso sucesso.

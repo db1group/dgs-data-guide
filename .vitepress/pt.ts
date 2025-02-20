@@ -44,6 +44,10 @@ export const pt = defineConfig({
                     text: "Avaliação de senioridades",
                     link: "/data/career/seniorities",
                   },
+                  {
+                    text: "Linguagens para Dados",
+                    link: "/data/career/language",
+                  },
                 ],
               },
             ],
