@@ -8,8 +8,10 @@ Na DB1, governança de dados não é apenas uma prática – é a base para gara
 
 Adotamos um modelo unificado de governança que permite padronizar a forma como lidamos com dados em diferentes projetos e times, evitando inconsistências, retrabalho e riscos estratégicos. Com base em frameworks consolidados, como o [DMBOK](https://www.dama.org/cpages/body-of-knowledge) (Data Management Body of Knowledge) e o modelo de maturidade do [Gartner](https://www.gartner.com/en/data-analytics), buscamos sempre evoluir nossos processos, monitorar nossa maturidade e garantir que segurança, qualidade e confiabilidade estejam no centro de tudo o que fazemos com dados.
 
-<img src="/img/docs/data-governance.png" alt="Governança" width="400" height="400"/>
-<small>Fonte: Desenvolvimento interno DB1.</small>
+<figure>
+    <img src="/img/docs/data-governance.png" alt="batch" max-widht="400">
+    <figcaption>Governança de Dados - Gestão.</figcaption>
+</figure>
 
 
 ## Padrões e Consistência
@@ -33,7 +35,7 @@ A confiabilidade de qualquer produto de dados começa pela **validação automat
 
 Na prática, implementamos **testes automatizados** em diferentes níveis das pipelines, com foco em três pilares principais:
 
-- **Qualidade dos Dados**: Validamos se os dados atendem às regras de negócio, formatos esperados, faixas de valores e se estão livres de duplicações ou campos nulos indevidos.
+- **[Qualidade dos Dados](https://www.ibm.com/)**: Validamos se os dados atendem às regras de negócio, formatos esperados, faixas de valores e se estão livres de duplicações ou campos nulos indevidos.
 - **Integridade**: Garantimos que as relações entre tabelas, chaves primárias/estrangeiras, e outras dependências estruturais estejam preservadas ao longo das transformações.
 - **Confiabilidade**: Testamos se os dados são consistentes ao longo do tempo, e se refletem corretamente as mudanças que ocorrem nas fontes.
 
@@ -59,8 +61,10 @@ Aplicamos o princípio do **menor privilégio**, onde cada pessoa ou time tem ac
 
 Para facilitar a visualização dessa estrutura de acesso, utilizamos um modelo de mapeamento por função, como no exemplo abaixo:
 
-<img src="/img/docs/access-matrix.png" alt="Matriz de Acessos por Área" width="600"/>
-<small>Fonte: https://www.cloudflare.com/pt-br/learning/access-management/role-based-access-control-rbac/.</small>
+<figure>
+    <img src="/img/docs/access-matrix.png" alt="matriz" max-widht="400">
+    <figcaption>Fonte: https://www.cloudflare.com/pt-br/learning/access-management/role-based-access-control-rbac/.</figcaption>
+</figure>
 
 Nesse exemplo, cada área tem acesso apenas aos recursos diretamente relacionados às suas responsabilidades:
 
@@ -98,7 +102,7 @@ O **Gerenciamento de Metadados** desempenha um papel fundamental na Governança 
 A definição de taxonomias padronizadas é essencial para organizar e classificar os dados de maneira hierárquica, possibilitando uma **navegação estruturada e intuitiva** pelas informações disponíveis. Utilizamos abordagens como:
 
 - **Classificação por Domínio de Negócio**: Agrupamento de dados por áreas como **Vendas, Financeiro, Marketing e Engenharia**.
-- **Categorização por Sensibilidade**: Dados classificados como **públicos, internos, confidenciais ou sensíveis**, seguindo diretrizes da **LGPD e GDPR**.
+- **Categorização por Sensibilidade**: Dados classificados como **públicos, internos, confidenciais ou sensíveis**, seguindo diretrizes da **[LGPD e GDPR](https://www.jusbrasil.com.br/artigos/comparando-a-lgpd-com-a-gdpr-abordagens-a-protecao-de-dados-pessoais/1971798734)**.
 - **Hierarquia de Entidades**: Estruturas que definem relações entre entidades como **Clientes, Produtos e Transações**, promovendo consistência no uso dos dados.
 
 Essa abordagem padronizada evita ambiguidades e facilita a descoberta, reutilização e controle dos dados em diferentes contextos de análise.
@@ -141,7 +145,7 @@ Monitoramos continuamente indicadores-chave para avaliar a saúde das nossas pip
 - **Taxa de Erros**: Percentual de falhas em execuções de pipelines e consultas.
 - **Disponibilidade**: Tempo de uptime dos serviços e cumprimento dos SLAs.
 - **Consumo de Recursos**: Utilização de CPU, memória e armazenamento em serviços críticos.
-- **Qualidade dos Dados**: Análises sobre volumes inesperados, anomalias estatísticas e conformidade com regras de validação.
+- **[Qualidade dos Dados](https://www.ibm.com/think/topics/data-quality)**: Análises sobre volumes inesperados, anomalias estatísticas e conformidade com regras de validação.
 
 Essas métricas são essenciais para antecipar problemas e garantir que os processos funcionem de forma previsível e eficiente.
 
@@ -173,3 +177,8 @@ Por fim, a Governança de Dados na DB1 é um pilar essencial para garantir segur
 Nosso foco está na padronização, validação e gestão de acessos, garantindo que os dados sejam precisos e acessíveis apenas para as pessoas certas. Implementamos testes automatizados, controle de metadados e monitoramento contínuo, reduzindo erros e fortalecendo a rastreabilidade.
 
 Ao integrar processos robustos e ferramentas especializadas, asseguramos que nossos dados sustentem decisões estratégicas e operacionais de forma confiável e eficiente.
+
+## Créditos:
+- **[Databricks](https://www.databricks.com/br)**
+- **[Amazon Web Services](https://aws.amazon.com/pt/)**
+- **[IBM](https://www.ibm.com/)**
