@@ -6,7 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      AWS_S3_BUCKET_NAME: engineerguide.db1.com.br
+      AWS_S3_BUCKET_NAME: dataguide.db1.com.br
     strategy:
       matrix:
         node-version: [20]
