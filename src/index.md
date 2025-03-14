@@ -10,8 +10,8 @@ hero:
       text: O Guia
       link: /docs/data/db1-way
 
-features:
-  - title: Radar de tecnologia
-    details: Aproveite e confira nosso radar de tecnologia, com nossas opiniões sobre o linguagem, frameworks e ferramentas
-    link: https://techradar.db1.com.br
+# features:
+#   - title: Radar de tecnologia
+#     details: Aproveite e confira nosso radar de tecnologia, com nossas opiniões sobre o linguagem, frameworks e ferramentas
+#     link: https://techradar.db1.com.br
 ---

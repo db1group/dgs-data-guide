@@ -23,12 +23,24 @@ export const pt = defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "Documentação técnica",
-                    link: "data/best-practices/technical-documentation",
+                    text: "Governança e Qualidade",
+                    link: "data/best-practices/1_governance-data-quality",
                   },
                   { 
-                    text: "CI/CD", 
-                    link: "data/best-practices/ci-cd" 
+                    text: "Processamento de Dados", 
+                    link: "data/best-practices/2_engineer-processing" 
+                  },
+                  { 
+                    text: "Modelagem e Arquitetura", 
+                    link: "data/best-practices/3_data-modeling-architecture" 
+                  },
+                  { 
+                    text: "Segurança e Compliance", 
+                    link: "data/best-practices/4_security-and-compliance" 
+                  },
+                  { 
+                    text: "Análise e Inteligência", 
+                    link: "data/best-practices/5_analytics-and-intelligence" 
                   },
                 ],
               },
@@ -60,9 +72,9 @@ export const pt = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    {
-      text: "Radar de tecnologia",
-      link: "https://techradar.db1.com.br/",
-    },
+    // {
+    //   text: "Radar de tecnologia",
+    //   link: "https://techradar.db1.com.br/",
+    // },
   ];
 }

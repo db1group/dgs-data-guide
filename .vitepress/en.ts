@@ -52,9 +52,9 @@ export const en = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    {
-      text: "Technology Radar",
-      link: "https://techradar.db1.com.br/",
-    },
+    // {
+    //   text: "Technology Radar",
+    //   link: "https://techradar.db1.com.br/",
+    // },
   ];
 }

@@ -50,9 +50,9 @@ export const es = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    {
-      text: "Radar de Tecnología",
-      link: "https://techradar.db1.com.br/",
-    },
+    // {
+    //   text: "Radar de Tecnología",
+    //   link: "https://techradar.db1.com.br/",
+    // },
   ];
 }
