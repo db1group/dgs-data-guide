@@ -47,4 +47,4 @@ Manter uma base sólida de testes nos permite:
 - Garantir transparência e confiança nas entregas de dados;
 - Evitar retrabalho e análises equivocadas.
 
-Testar dados não é um "plus", é parte do nosso compromisso com a entrega de produtos de dados robustos, escaláveis e confiáveis.
+Testar dados não é um "plus", é parte do nosso compromisso com a entrega de produtos de dados robustos, escaláveis e confiáveis. 
