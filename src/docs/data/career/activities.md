@@ -2,23 +2,23 @@
 
 Na era digital, a chave para a inovação e sucesso está nas mãos de profissionais **talentosos e visionários**. No DB1, valorizamos a diversidade de habilidades e o potencial de cada indivíduo, acreditando que a verdadeira inovação, produtividade e relevância no mercado advêm de um time bem capacitado. Estamos comprometidos em guiar nossos colaboradores para trilharem os caminhos que melhor se adaptem às suas paixões e habilidades, sendo esses:
 
-### ⚙️ Engenharia de Dados
+## ⚙️ Engenharia de Dados
 O Engenheiro(a) de Dados projeta, desenvolve e mantém a infraestrutura necessária para a ingestão, armazenamento e processamento de dados. Ele é responsável por construir pipelines de dados eficientes e escaláveis, garantindo a qualidade e integridade dos dados utilizados por diferentes sistemas. Suas principais competências incluem bancos de dados, processos ETL (Extract, Transform, Load) e computação em nuvem. Seu trabalho assegura que os dados estejam estruturados e disponíveis para análises e aplicações de aprendizado de máquina.
 
-### 🧠 Engenharia de Machine Learning (ML)
+## 🧠 Engenharia de Machine Learning (ML)
 O Engenheiro(a) de ML é responsável por operacionalizar modelos de aprendizado de máquina, tornando-os escaláveis e eficientes para uso em produção. Ele trabalha na implementação, otimização e monitoramento de modelos desenvolvidos por Cientistas de Dados, garantindo que funcionem corretamente em ambientes reais. Suas competências incluem conhecimento aprofundado de frameworks de ML, desenvolvimento de APIs para inferência e otimização de performance computacional.
 
-### 🧪 Ciência de Dados
+## 🧪 Ciência de Dados
 O Cientista de Dados analisa grandes volumes de dados para identificar padrões e gerar modelos preditivos que auxiliam na tomada de decisões estratégicas. Ele utiliza estatística avançada, aprendizado de máquina e programação para desenvolver soluções baseadas em dados. Suas competências incluem manipulação de dados, modelagem estatística e compreensão do contexto de negócios para transformar dados em insights acionáveis.
 
-### 📊 Engenharia Analítica
+## 📊 Engenharia Analítica
 O Engenheiro(a) Analítico(a) atua na modelagem, transformação e otimização de dados para atender às necessidades analíticas de uma organização. Ele constrói e mantém modelos de dados, assegurando que sejam eficientes e acessíveis para Analistas e Cientistas de Dados. Suas competências incluem SQL avançado, criação de data marts, otimização de consultas e desenvolvimento de soluções para visualização de dados.
 
-### 🔍 Análise de Dados
+## 🔍 Análise de Dados
 O Analista de Dados examina e interpreta dados para gerar relatórios e apoiar a tomada de decisão. Ele trabalha na coleta, limpeza e visualização de informações, utilizando ferramentas como SQL, Excel e plataformas de BI (Business Intelligence). Seu foco está em análises descritivas, identificação de tendências e comunicação clara dos resultados para diferentes áreas da empresa.
 
 ---
-
+ 
 Resumindo, no DB1 utilizamos o fluxo abaixo para estruturar e categorizar as tarefas dentro do ciclo de vida dos dados, garantindo que cada etapa seja gerenciada por especialistas apropriados.
 
 ![Fluxo e Atuação](/img/docs/flow-activities-data.jpg)

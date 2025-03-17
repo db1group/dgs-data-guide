@@ -4,9 +4,9 @@ Uma empresa de tecnologia é baseada em **pessoas talentosas**, só assim a inov
 
 Então, **o que esperamos** dos talentos que temos? Mais especificamente, o que esperamos de **nossos engenheiros e cientistas de dados**?
 
-O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas para termos uma forma simplificada de expressar as características dos níveis de senioridade para profissionais de dados, vamos nos debruçar sobre os principais pontos:
+O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas para termos uma forma simplificada de expressar as características dos níveis de senioridade para profissionais de dados, vamos nos debruçar sobre os principais pontos, e o que esperar de cada nível:
 
-## Nível Trainee 🐣 (o que esperar)
+## Nível Trainee 🐣 
 
 - Você é uma pessoa sem experiência (se já tiver, melhor ainda).
 - Você está na organização para aprender.
@@ -14,7 +14,7 @@ O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas
 - Você aceita o conhecimento como moeda de troca pelo seu tempo.
 - Você está disposto a aprender conceitos de engenharia, análise e ciência de dados.
 
-## Nível Júnior 👶 (o que esperar)
+## Nível Júnior 👶 
 
 - Você pode executar operações básicas de manipulação de dados (extração, transformação e carregamento - ETL/ELT).
 - Você tem conhecimento básico de bancos de dados relacionais e não relacionais.
@@ -23,7 +23,7 @@ O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas
 - Você pode executar consistentemente tarefas simples sem ajuda e tarefas complexas com o apoio de alguém mais experiente.
 - Você deve ter entre 1 e 3 anos de experiência profissional.
 
-## Nível Pleno 🤓 (o que esperar)
+## Nível Pleno 🤓 
 
 - Você pode realizar atividades complexas de engenharia, análise ou ciência de dados de forma autônoma.
 - Você deve ser capaz de apresentar insights e resultados de suas entregas.
@@ -33,7 +33,7 @@ O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas
 - Você entende a cadeia de processamento de dados ponta a ponta (coleta, armazenamento, processamento, visualização e governança).
 - Você deve ter entre 3 e 5 anos de experiência profissional.
 
-## Nível Sênior 👴 (o que esperar)
+## Nível Sênior 👴 
 
 - Você deve ter profundo conhecimento teórico e prático em engenharia, análise ou ciência de dados.
 - Você deve ter um portfólio de projetos com alta complexidade e protagonismo.
@@ -45,7 +45,7 @@ O Grupo DB1 possui um processo de gestão de pessoas complexo e aprofundado, mas
 - O sênior deve saber quando contrair dívida técnica e como planejá-la estrategicamente.
 - Você deve ter pelo menos 5 anos de experiência profissional.
 
-## Líder de Dados 🧑‍🏫 (o que esperar)
+## Líder de Dados 🧑‍🏫 
 
 - Antes de ser um líder, você é um profissional de dados sênior, lembre-se disso.
 - Você é responsável por tudo o que é entregue na camada de dados de uma equipe.
