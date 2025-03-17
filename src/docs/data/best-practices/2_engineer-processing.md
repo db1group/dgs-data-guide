@@ -122,7 +122,7 @@ O processamento de dados na DB1 é sustentado por princípios de **eficiência, 
 
 Nos próximos tópicos, detalharemos práticas como **observabilidade aplicada ao processamento**, **tratamento de dados sensíveis**, **otimizações de performance** e **gestão de custos em pipelines**.
 
-## Créditos:
+**Créditos:**
 - **[Databricks](https://www.databricks.com/br)**
 - **[Amazon Web Services](https://aws.amazon.com/pt/)**
 - **[DataCamp](https://www.datacamp.com/)**

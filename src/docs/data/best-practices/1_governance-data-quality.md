@@ -178,7 +178,7 @@ Nosso foco está na padronização, validação e gestão de acessos, garantindo
 
 Ao integrar processos robustos e ferramentas especializadas, asseguramos que nossos dados sustentem decisões estratégicas e operacionais de forma confiável e eficiente.
 
-## Créditos:
+**Créditos:**
 - **[Databricks](https://www.databricks.com/br)**
 - **[Amazon Web Services](https://aws.amazon.com/pt/)**
 - **[IBM](https://www.ibm.com/)**
