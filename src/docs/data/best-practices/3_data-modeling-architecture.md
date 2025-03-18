@@ -280,8 +280,6 @@ Quando diferentes equipes usam os mesmos dados, é essencial que todos estejam f
 
 Na **DB1**, usamos Data Contracts para garantir um alinhamento claro entre as equipes que pedem informações e as que desenvolvem as soluções. Isso evita mal-entendidos, retrabalhos e problemas em cadeia.
 
----
-
 ## Como buscamos estruturar dados
 
 Para que as informações estejam sempre disponíveis, confiáveis e prontas para gerar valor, seguimos boas práticas e modernas de modelagem e arquitetura, sendo algumas delas:
