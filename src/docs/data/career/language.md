@@ -48,6 +48,4 @@ Utilizado em aplicações de visualização de dados interativas (D3.js, Chart.j
 TypeScript adiciona tipagem estática e maior segurança para aplicações baseadas na web.
 Cada vez mais presente em soluções de BI embutidas e dashboards interativos.
 
-
-
 A escolha da linguagem de programação depende do contexto e da necessidade de cada projeto. Enquanto Python e SQL dominam o cenário de análise e modelagem de dados, linguagens como Java, Scala e Go são fundamentais para arquiteturas de dados escaláveis e processamento distribuído. O uso estratégico dessas linguagens garante a eficiência e confiabilidade dos processos dentro do ciclo de vida dos dados.
