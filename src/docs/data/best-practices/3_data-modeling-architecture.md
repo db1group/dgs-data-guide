@@ -6,7 +6,7 @@ outline: deep
 
 Na DB1, a **modelagem e arquitetura de dados** desempenham um papel fundamental na organização, desempenho e governança dos dados dentro de um ecossistema de processamento. Adotamos boas práticas que garantem flexibilidade, escalabilidade e confiabilidade, permitindo que os dados sejam consumidos de maneira eficiente e estruturada.
 
-A seguir, detalhamos os principais pilares dessa abordagem.
+A seguir, detalhamos os principais pilares dessa abordagem, ressaltando que **todo o conteúdo apresentado é relativo** e pode variar de acordo com as escolhas de tecnologias, modelagens e arquiteturas adotadas. Cada projeto é único e deve ser adaptado às necessidades específicas do negócio, o que pode resultar em diferenças significativas entre os ambientes.
 
 ## Desenho de Modelos
 
@@ -22,24 +22,72 @@ Além disso, um modelo de dados bem estruturado deve ser acompanhado por uma doc
 
 Seguindo boas práticas na modelagem de dados, podemos não apenas otimizar o desempenho do sistema, mas também garantir a qualidade, confiabilidade e integridade dos dados, contribuindo para a tomada de decisões mais informadas e eficientes dentro da organização. Seguimos boas práticas nos seguintes modelos por exemplo:
 
-- **Modelagem Relacional**: Aplicação de normalização para reduzir redundância e garantir integridade e relacionamento dos dados em bancos SQL como **PostgreSQL**, **MySQL** e **SQL Server**.  
+#### **Modelagem Relacional** 
+
+Aplicação de normalização para reduzir redundância e garantir integridade e consistência dos dados em bancos SQL como **PostgreSQL**, **MySQL** e **SQL Server**, além de ser útil para explicar o relacionamento entre entidades.
 <figure>
     <img src="/img/docs/relationship.png" alt="batch">
     <figcaption>Modelagem Relacional.</figcaption>
 </figure>  
 
-- **Modelagem Dimensional**: Estruturas otimizadas para análise de dados, utilizando conceitos de **fato** e **dimensão**, aplicáveis em **Snowflake**, **BigQuery**, **Redshift** e **Databricks**.
+#### **Modelagem Dimensional**
+
+Estruturas otimizadas para análise de dados, utilizando conceitos de **fato** e **dimensão**, é comum principalmente em bancos de dados OLAP (Online Analytical Processing), onde o foco é facilitar análises rápidas e intuitivas, comum em data warehouses e aplicáveis em **Snowflake**, **BigQuery**, **Redshift** e **Databricks**.
 <figure>
     <img src="/img/docs/star-flake.png" alt="batch">
     <figcaption>Modelagem Dimensional - Star Schema vs Snowflake.</figcaption>
 </figure>
-  
-- **Modelagem Orientada a Eventos ([Event Driven](https://medium.com/parebem-engineering/introdu%C3%A7%C3%A3o-a-arquitetura-orientada-a-eventos-b03e429aac0c))**: Construção de esquemas baseados em eventos, utilizando **Kafka**, **DynamoDB**, **MongoDB** e **EventBridge**.
 
-<figure>
-    <img src="/img/docs/event-driven.png" alt="batch">
-    <figcaption>Event Driven.</figcaption>
-</figure>
+**Principais diferenças**
+
+| Característica      | Modelagem Relacional         | Modelagem Dimensional       |
+|---------------------|------------------------------|-----------------------------|
+| **Foco**            | Processamento transacional   | Análise de dados            |
+| **Estrutura**       | Entidades e relacionamentos  | Fatos e dimensões           |
+| **Normalização**    | Alta (3FN ou mais)           | Baixa (denormalizada)       |
+| **Performance**     | Otimizada para escrita       | Otimizada para leitura      |
+| **Casos de uso**    | Sistemas operacionais        | Data warehouses / BI        |
+
+---
+  
+#### **Modelagem Orientada a Eventos ([Event Driven](https://medium.com/parebem-engineering/introdu%C3%A7%C3%A3o-a-arquitetura-orientada-a-eventos-b03e429aac0c))**
+
+Construção de esquemas baseados em eventos, utilizando **Kafka**, **DynamoDB**, **MongoDB** e **EventBridge**. Você modela os dados a partir do que acontece no sistema — cliques, compras, atualizações, acessos, transferências, etc. — em vez de apenas modelar as entidades envolvidas. 
+
+A Modelagem Orientada a Eventos também é muito útil e comum para **ingestão de dados** em tempo real e possui outras características como:
+- **Event sourcing** para reprocessamento e auditoria.
+- **Log de eventos** Kafka como fonte de verdade.
+- Integração com modelos de Machine Learning em tempo real
+
+
+##### **Modelagem tradicional (orientada a entidades):**
+
+```json
+{
+  "usuario": {
+    "id": 1,
+    "nome": "João",
+    "saldo": 100.00
+  }
+}
+```
+
+##### **Modelagem orientada a eventos:**
+```json
+[
+  {
+    "evento": "criou_conta",
+    "usuario_id": 1,
+    "timestamp": "2024-01-01T12:00:00Z"
+  },
+  {
+    "evento": "deposito_realizado",
+    "usuario_id": 1,
+    "valor": 100.00,
+    "timestamp": "2024-01-02T08:30:00Z"
+  }
+]
+```
 
 
 ## Camadas de Dados
@@ -58,6 +106,11 @@ A organização dos dados em camadas estruturadas permite melhor governança, se
 - **Silver**: Semelhante ao **trusted**, é a camada onde os dados são limpos, validados e transformados para garantir a qualidade e a consistência, muitas vezes com dados mais estruturados e preparados para análises mais específicas.
 - **Gold**: É a camada final, onde os dados estão prontos para análises de alto nível, visualizações e insights, com transformações avançadas aplicadas, podendo incluir métricas ou dados agregados.
 
+<figure>
+    <img src="/img/docs/medalion.png" alt="batch">
+    <figcaption>Arquitetura Medalion. Fonte: <a href="https://www.databricks.com/br/glossary/medallion-architecture">Arquitetura medallion</a></figcaption>
+</figure>
+
 #### Diferenças principais:
 - **Semântica**: A principal diferença é que a abordagem de **stage, trusted e refined** enfatiza mais o processo de transformação e qualidade dos dados, com foco no ciclo de vida dos dados e sua preparação para uso final. A abordagem **bronze, silver e gold** é mais associada à evolução do estado dos dados em um processo progressivo de refinamento e preparação para análises.
   
@@ -67,10 +120,6 @@ Em resumo ambas as abordagens têm o mesmo objetivo de estruturar e classificar 
 
 Cada camada tem um propósito específico, permitindo maior controle e segurança no fluxo de informações.
 
-<figure>
-    <img src="/img/docs/medalion.png" alt="batch">
-    <figcaption>Arquitetura Medalion. Fonte: <a href="https://www.databricks.com/br/glossary/medallion-architecture">Arquitetura medallion</a></figcaption>
-</figure>
 
 ## Versionamento de Dados
 
@@ -78,13 +127,24 @@ O versionamento de dados assegura a rastreabilidade e a confiabilidade das infor
 
 - **[SCD (Slowly Changing Dimensions)](https://www.thoughtspot.com/data-trends/data-modeling/slowly-changing-dimensions-in-data-warehouse)**: Aplicação de estratégias de versionamento para rastreamento de mudanças em bases dimensionais.
 - **[Data Lake Versioning](https://medium.com/@prachikushwah/data-versioning-using-time-travel-feature-5a5bde2c5e3)**: Utilização de formatos como **Delta Lake** e **Apache Iceberg** para versionamento eficiente em ambientes distribuídos.
-- **[Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel)**: Recursos nativos de bancos como **Snowflake**, **Delta Lake** e **BigQuery** permitem consultar versões anteriores de um dataset.
-
 <figure>
-    <img src="/img/docs/time-travel.png" alt="batch">
-    <figcaption>Time Travel permite retroceder ou consultar uma versão específica de uma tabela.</figcaption>
+    <img src="/img/docs/data-version.png" alt="batch">
+    <figcaption>O Delta Lake permite retroceder ou consultar uma versão específica de uma tabela.</figcaption>
 </figure>
 
+- **[Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel)**: Recursos nativos de bancos como **Snowflake**, **Delta Lake** e **BigQuery** permitem consultar versões anteriores de um dataset.  
+- **[Data Lineage Tools](https://www.datacamp.com/blog/data-lineage?utm_source=google&utm_medium=paid_search&utm_campaignid=21057859163&utm_adgroupid=157296745617&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=733936255826&utm_targetid=aud-2191467489990:dsa-2222697811358&utm_loc_interest_ms=&utm_loc_physical_ms=1032022&utm_content=DSA~blog~Data-Science&accountid=9624585688&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-latam-en_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na&gad_source=1&gclid=Cj0KCQjw1um-BhDtARIsABjU5x6hi2PvoLPcYJNNqWPnES5Bewk2YEU0KDgWesa-yq3p2l8-2dLmPn0aAt49EALw_wcB)**: Ferramentas como [dbt Power User](https://docs.myaltimate.com/)(extensão para dbt) ou soluções integradas como Unity Catalog (Databricks), AWS Glue Data Catalog ou DataHub são extremamente úteis para rastreabilidade de uma ou mais entidades relacionadas.
+
+<figure>
+    <img src="/img/docs/dbt-lineage.png" alt="batch">
+    <figcaption>Exemplo de Data Lineage Tool - Extensão 'dbt Power User' no VsCode para dbt.</figcaption>
+</figure>
+
+- **Auditabilidade** vs **Observabilidade**:  
+**Auditabilidade** -> foco em "quem mexeu e quando".  
+**Observabilidade** -> foco em "como o dado se comporta, flutuações, anomalias".  
+
+Em resumo, o versionamento de dados é essencial para garantir a confiança, rastreabilidade e capacidade de auditoria ao longo do ciclo de vida da informação. Seja por meio de técnicas como SCDs, formatos com suporte a time travel ou ferramentas de data lineage, o objetivo central é possibilitar que as mudanças nos dados sejam compreendidas, controladas e revertidas quando necessário — promovendo maior governança, transparência e segurança na tomada de decisão.
 
 ## Tipos de Arquiteturas de Dados
 
@@ -192,6 +252,18 @@ A **Arquitetura Kappa** simplifica o processamento de dados ao utilizar um únic
     <figcaption>Fluxo da arquitetura Kappa.</figcaption>
 </figure>
 
+---
+
+**Comparativo entre os tipos de arquitetura**:
+
+| Arquitetura     | Performance | Custo   | Flexibilidade | Governança      | Tempo Real |
+|------------------|-------------|---------|----------------|------------------|-------------|
+| Data Warehouse   | Alta        | Alto    | Baixa          | Alta             | Não         |
+| Data Lake        | Média       | Baixo   | Alta           | Média            | Parcial     |
+| Lakehouse        | Alta        | Médio   | Alta           | Alta             | Sim         |
+| Data Mesh        | Variável    | Variável| Alta           | Descentralizada  | Sim         |
+
+
 Cada uma dessas arquiteturas tem um papel fundamental na estratégia de dados de uma organização, e a escolha depende dos requisitos de escalabilidade, latência, governança e casos de uso específicos.
 
 ## Arquitetura Data Mesh
@@ -280,18 +352,9 @@ Quando diferentes equipes usam os mesmos dados, é essencial que todos estejam f
 
 Na **DB1**, usamos Data Contracts para garantir um alinhamento claro entre as equipes que pedem informações e as que desenvolvem as soluções. Isso evita mal-entendidos, retrabalhos e problemas em cadeia.
 
-## Como buscamos estruturar dados
+---
 
-Para que as informações estejam sempre disponíveis, confiáveis e prontas para gerar valor, seguimos boas práticas e modernas de modelagem e arquitetura, sendo algumas delas:
-
-- **Data Mesh**: cada time cuida de seus próprios dados como se fossem produtos, promovendo mais autonomia e responsabilidade.
-- **Lakehouse**: é uma combinação das vantagens dos data lakes (flexibilidade) com as dos data warehouses (organização e performance).
-- **Controle de Versões**: qualquer mudança nos dados é registrada e controlada, para que ninguém seja surpreendido.
-- **Qualidade e Governança**: usamos ferramentas que ajudam a organizar, monitorar e manter a qualidade dos dados no dia a dia.
-
-Além das demais arquiteturas e conceitos que abordamos neste documento. Buscamos adaptar modelos e arquiteturas as necessidades de cada projeto. 
-
-Essas práticas fazem parte da nossa jornada para transformar dados em valor real para o negócio — com segurança, escalabilidade e colaboração entre todas as áreas envolvidas.
+Para que as informações estejam sempre disponíveis, confiáveis e prontas para gerar valor, seguimos boas práticas e modernas de modelagem e arquitetura, essas práticas fazem parte da nossa jornada para transformar dados em valor real para o negócio — com segurança, escalabilidade e colaboração entre todas as áreas envolvidas.
 
 **Créditos:**
 - **[Databricks](https://www.databricks.com/br)**
