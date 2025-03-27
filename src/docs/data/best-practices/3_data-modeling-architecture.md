@@ -88,7 +88,7 @@ A Modelagem Orientada a Eventos também é muito útil e comum para **ingestão 
   }
 ]
 ```
-
+Mais do que uma questão técnica, a modelagem bem estruturada permite que os dados apoiem decisões estratégicas, impulsionem a inovação e sustentem o crescimento do negócio. Na **DB1**, entendemos que cada projeto é único e que a modelagem de dados deve ser flexível o suficiente para acompanhar a evolução das necessidades do mercado, garantindo sempre a melhor performance e aderência às exigências do negócio.
 
 ## Camadas de Dados
 
