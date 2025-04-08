@@ -4,7 +4,7 @@ outline: deep
 
 # Processamento de Dados
 
-Na DB1, o **processamento de dados** vai além da movimentação de informações entre sistemas — é um processo estruturado, eficiente e resiliente, que transforma dados brutos em ativos confiáveis e prontos para análise. Investimos em boas práticas, automação e monitoramento para garantir que nossos pipelines sejam escaláveis, observáveis e alinhados às necessidades do negócio.
+Na [DB1](https://www.db1.com.br/), o **processamento de dados** vai além da movimentação de informações entre sistemas — é um processo estruturado, eficiente e resiliente, que transforma dados brutos em ativos confiáveis e prontos para análise. Investimos em boas práticas, automação e monitoramento para garantir que nossos pipelines sejam escaláveis, observáveis e alinhados às necessidades do negócio.
 
 Nosso modelo de processamento é pensado para garantir **performance, rastreabilidade e modularidade**, promovendo agilidade sem abrir mão da robustez. A seguir, destacamos os pilares que sustentam essa abordagem.
 
@@ -118,7 +118,7 @@ Com DataOps, garantimos um fluxo contínuo e confiável desde o desenvolvimento 
 
 ---
 
-O processamento de dados na DB1 é sustentado por princípios de **eficiência, modularidade e confiabilidade**, integrando boas práticas de engenharia com as exigências de governança e segurança.
+O processamento de dados na [DB1](https://www.db1.com.br/) é sustentado por princípios de **eficiência, modularidade e confiabilidade**, integrando boas práticas de engenharia com as exigências de governança e segurança.
 
 Nos próximos tópicos, detalharemos práticas como **observabilidade aplicada ao processamento**, **tratamento de dados sensíveis**, **otimizações de performance** e **gestão de custos em pipelines**.
 

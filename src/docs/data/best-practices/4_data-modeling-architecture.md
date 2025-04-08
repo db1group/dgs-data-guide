@@ -4,7 +4,7 @@ outline: deep
 
 # Modelagem e Arquitetura de Dados
 
-Na DB1, a **modelagem e arquitetura de dados** desempenham um papel fundamental na organização, desempenho e governança dos dados dentro de um ecossistema de processamento. Adotamos boas práticas que garantem flexibilidade, escalabilidade e confiabilidade, permitindo que os dados sejam consumidos de maneira eficiente e estruturada.
+Na [DB1](https://www.db1.com.br/), a **modelagem e arquitetura de dados** desempenham um papel fundamental na organização, desempenho e governança dos dados dentro de um ecossistema de processamento. Adotamos boas práticas que garantem flexibilidade, escalabilidade e confiabilidade, permitindo que os dados sejam consumidos de maneira eficiente e estruturada.
 
 A seguir, detalhamos os principais pilares dessa abordagem, ressaltando que **todo o conteúdo apresentado é relativo** e pode variar de acordo com as escolhas de tecnologias, modelagens e arquiteturas adotadas. Cada projeto é único e deve ser adaptado às necessidades específicas do negócio, o que pode resultar em diferenças significativas entre os ambientes.
 
@@ -88,11 +88,11 @@ A Modelagem Orientada a Eventos também é muito útil e comum para **ingestão 
   }
 ]
 ```
-Mais do que uma questão técnica, a modelagem bem estruturada permite que os dados apoiem decisões estratégicas, impulsionem a inovação e sustentem o crescimento do negócio. Na **DB1**, entendemos que cada projeto é único e que a modelagem de dados deve ser flexível o suficiente para acompanhar a evolução das necessidades do mercado, garantindo sempre a melhor performance e aderência às exigências do negócio.
+Mais do que uma questão técnica, a modelagem bem estruturada permite que os dados apoiem decisões estratégicas, impulsionem a inovação e sustentem o crescimento do negócio. Na **[DB1](https://www.db1.com.br/)**, entendemos que cada projeto é único e que a modelagem de dados deve ser flexível o suficiente para acompanhar a evolução das necessidades do mercado, garantindo sempre a melhor performance e aderência às exigências do negócio.
 
 ## Camadas de Dados
 
-A organização dos dados em camadas estruturadas permite melhor governança, segurança e otimização do desempenho. Na DB1 buscamos utilizar modelos que facilitam o controle de acessos, a padronização dos processos e a escalabilidade da arquitetura em camadas.
+A organização dos dados em camadas estruturadas permite melhor governança, segurança e otimização do desempenho. Na [DB1](https://www.db1.com.br/) buscamos utilizar modelos que facilitam o controle de acessos, a padronização dos processos e a escalabilidade da arquitetura em camadas.
 
 ### Abordagens de Nomenclatura para Camadas de Dados
 
@@ -148,7 +148,7 @@ Em resumo, o versionamento de dados é essencial para garantir a confiança, ras
 
 ## Tipos de Arquiteturas de Dados
 
-Na DB1, adotamos diferentes arquiteturas para atender a variados casos de uso dentro dos nossos projetos. Cada arquitetura é escolhida conforme a necessidade de escalabilidade, desempenho, governança e processamento de dados. Dentre as principais, incluem-se:
+Na [DB1](https://www.db1.com.br/), adotamos diferentes arquiteturas para atender a variados casos de uso dentro dos nossos projetos. Cada arquitetura é escolhida conforme a necessidade de escalabilidade, desempenho, governança e processamento de dados. Dentre as principais, incluem-se:
 
 ### Data Lake
 
@@ -268,7 +268,7 @@ Cada uma dessas arquiteturas tem um papel fundamental na estratégia de dados de
 
 ## Arquitetura Data Mesh
 
-O **Data Mesh** representa uma abordagem inovadora e descentralizada para o gerenciamento de dados em organizações que lidam com múltiplos domínios de dados. Na DB1 buscamos uma abordagens diferente das tradicionais centralizadas, onde todos os dados são geridos em um único ponto, o Data Mesh foca na **distribuição da responsabilidade** sobre os dados, tratando-os como **produtos** dentro de diferentes domínios de negócio.
+O **Data Mesh** representa uma abordagem inovadora e descentralizada para o gerenciamento de dados em organizações que lidam com múltiplos domínios de dados. Na [DB1](https://www.db1.com.br/) buscamos uma abordagens diferente das tradicionais centralizadas, onde todos os dados são geridos em um único ponto, o Data Mesh foca na **distribuição da responsabilidade** sobre os dados, tratando-os como **produtos** dentro de diferentes domínios de negócio.
 
 Essa abordagem tem como objetivo a **escalabilidade**, **agilidade** e **autonomia** das equipes de dados, permitindo que cada domínio trate seus dados de forma independente e alinhada às necessidades de seu contexto específico, ao mesmo tempo em que promove a **governança federada** para garantir consistência e compliance.
 
@@ -336,21 +336,6 @@ O sucesso do Data Mesh depende da escolha correta de arquiteturas e ferramentas.
 Essas ferramentas permitem que cada domínio gerencie seus próprios dados de maneira independente, ao mesmo tempo que possibilitam a integração e governança eficiente dos dados em toda a organização.
 
 O Data Mesh oferece uma abordagem inovadora e escalável para organizações que enfrentam desafios relacionados ao gerenciamento de grandes volumes de dados em múltiplos domínios. Embora seja um modelo mais complexo do que as arquiteturas tradicionais, seus benefícios, como escalabilidade, autonomia das equipes e agilidade, fazem com que seja uma opção atraente para empresas que buscam evoluir em suas estratégias de dados.
-
-
-## Data Contracts
-
-**Data Contracts**, ou "contratos de dados", são acordos entre quem **produz** e quem **consome** informações dentro de uma empresa. Eles servem para garantir que os dados sejam entregues da forma certa, no momento certo, sem causar problemas para outras pessoas ou sistemas que dependem dessas informações.
-
-### Por que isso é importante?
-
-Quando diferentes equipes usam os mesmos dados, é essencial que todos estejam falando a mesma "língua". Os **Data Contracts** ajudam a garantir isso, com base em três pilares principais:
-
-- **Especificação Clara**: define exatamente como os dados devem ser, como tipos, formatos, nomes e regras.
-- **Validação Automática**: usamos ferramentas como **Great Expectations** e **dbt tests** para checar automaticamente se os dados estão corretos.
-- **Versionamento Seguro**: quando os dados mudam, isso é feito de forma controlada, sem prejudicar quem já usa os dados antigos.
-
-Na **DB1**, usamos Data Contracts para garantir um alinhamento claro entre as equipes que pedem informações e as que desenvolvem as soluções. Isso evita mal-entendidos, retrabalhos e problemas em cadeia.
 
 ---
 

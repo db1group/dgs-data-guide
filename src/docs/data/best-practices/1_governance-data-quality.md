@@ -4,7 +4,7 @@ outline: deep
 
 # Governança de Dados
 
-Na DB1, governança de dados não é apenas uma prática – é a base para garantir que nossas decisões sejam confiáveis, nossas análises sejam precisas e nossas operações sejam eficientes.
+Na [DB1](https://www.db1.com.br/), governança de dados não é apenas uma prática – é a base para garantir que nossas decisões sejam confiáveis, nossas análises sejam precisas e nossas operações sejam eficientes.
 
 Adotamos um modelo unificado de governança que permite padronizar a forma como lidamos com dados em diferentes projetos e times, evitando inconsistências, retrabalho e riscos estratégicos. Com base em frameworks consolidados, como o [DMBOK](https://www.dama.org/cpages/body-of-knowledge) (Data Management Body of Knowledge) e o modelo de maturidade do [Gartner](https://www.gartner.com/en/data-analytics), buscamos sempre evoluir nossos processos, monitorar nossa maturidade e garantir que segurança, qualidade e confiabilidade estejam no centro de tudo o que fazemos com dados.
 
@@ -55,7 +55,7 @@ Testar dados não é um "plus", é parte do nosso compromisso com a entrega de p
 
 ## Gestão de Acessos
 
-A **gestão de acessos** é um dos pilares fundamentais da Governança de Dados na DB1, pois garante que os dados certos estejam acessíveis apenas para as pessoas certas, no momento certo. Isso não é apenas uma questão de segurança — é também sobre **responsabilidade, conformidade e eficiência operacional**.
+A **gestão de acessos** é um dos pilares fundamentais da Governança de Dados na [DB1](https://www.db1.com.br/), pois garante que os dados certos estejam acessíveis apenas para as pessoas certas, no momento certo. Isso não é apenas uma questão de segurança — é também sobre **responsabilidade, conformidade e eficiência operacional**.
 
 Aplicamos o princípio do **menor privilégio**, onde cada pessoa ou time tem acesso apenas ao que é essencial para realizar suas atividades. Isso reduz riscos de vazamentos, elimina exposições desnecessárias de dados sensíveis e contribui para o cumprimento de normas como a **LGPD**.
 
@@ -95,7 +95,7 @@ Gestão de acessos eficiente não é sobre limitar o trabalho das pessoas — é
 
 ## Gerenciamento de Metadados
 
-O **Gerenciamento de Metadados** desempenha um papel fundamental na Governança de Dados da DB1, garantindo que os dados possuam **significado claro, contexto bem definido e uso padronizado** em toda a organização. Definir taxonomias e glossários de dados permite que diferentes times trabalhem de forma alinhada, minimizando ambiguidades e otimizando a interoperabilidade entre sistemas e processos.
+O **Gerenciamento de Metadados** desempenha um papel fundamental na Governança de Dados da [DB1](https://www.db1.com.br/), garantindo que os dados possuam **significado claro, contexto bem definido e uso padronizado** em toda a organização. Definir taxonomias e glossários de dados permite que diferentes times trabalhem de forma alinhada, minimizando ambiguidades e otimizando a interoperabilidade entre sistemas e processos.
 
 ### Taxonomias e Classificação de Dados
 
@@ -130,12 +130,48 @@ Adotar uma estratégia estruturada de gerenciamento de metadados traz vários be
 - **Facilidade de Auditoria e Compliance**: Proporciona trilhas de rastreabilidade e conformidade com normas regulatórias.
 - **Interoperabilidade**: Permite a integração fluida entre sistemas e times.
 
-Na DB1, a gestão eficiente de metadados é parte essencial da governança de dados, garantindo **clareza, padronização e confiança** em nossas análises e decisões estratégicas.
+Na [DB1](https://www.db1.com.br/), a gestão eficiente de metadados é parte essencial da governança de dados, garantindo **clareza, padronização e confiança** em nossas análises e decisões estratégicas.
+
+## Data Mart
+
+Um **Data Mart** é um subconjunto especializado de um data warehouse, projetado para atender às necessidades específicas de um departamento ou área de negócio dentro de uma organização, como vendas, finanças ou marketing.  
+Ele contém dados focados e relevantes para um grupo específico de usuários, facilitando análises e relatórios direcionados.
+
+### Benefícios do Data Mart
+
+- **Acesso Rápido a Informações**  
+  Por conter um volume menor e mais específico de dados, os usuários podem acessar e analisar informações com maior rapidez, melhorando a eficiência na tomada de decisões.
+
+- **Implementação Simplificada**  
+  A criação de um **data mart** é geralmente mais rápida e menos complexa do que a de um data warehouse completo, permitindo que as organizações atendam rapidamente às necessidades de informações de departamentos específicos.
+
+- **Custo Reduzido**  
+  Devido ao seu escopo mais limitado, os **data marts** podem ser implementados com um investimento menor em comparação com data warehouses corporativos abrangentes.
+
+### Tipos de Data Mart
+
+- **Dependente**  
+  Derivado de um data warehouse existente, extraindo um subconjunto de dados para atender a necessidades específicas de um departamento.
+
+- **Independente**  
+  Criado diretamente a partir de fontes de dados operacionais, sem depender de um data warehouse central.
+
+- **Híbrido**  
+  Combina dados de um data warehouse e de sistemas operacionais, oferecendo flexibilidade na obtenção de informações relevantes.
+
+### Data Mart e Governança de Dados
+
+A implementação de **data marts** deve estar alinhada às práticas de governança de dados da organização para garantir a qualidade, segurança e consistência das informações.  
+Isso inclui a definição clara de políticas de acesso, garantindo que apenas usuários autorizados possam visualizar ou manipular os dados, e a aplicação de padrões de qualidade para assegurar a precisão e integridade das informações armazenadas.
+
+Além disso, a documentação detalhada dos metadados é essencial para manter a clareza sobre a origem, transformação e uso dos dados dentro do **data mart**, facilitando auditorias e promovendo a transparência nas operações de dados.  
+
+A <strong style="color: #8975fe">[DB1](https://www.db1.com.br/)</strong> ao integrar **data marts** com as diretrizes de governança de dados nos **projetos**, as organizações podem aproveitar os benefícios de análises especializadas sem comprometer a integridade e a conformidade dos dados corporativos.
 
 
 ## Observabilidade e Monitoramento
 
-A **Observabilidade e Monitoramento** são essenciais para garantir que os sistemas de dados operem de maneira confiável, identificando anomalias rapidamente, prevenindo falhas e assegurando a conformidade com os **SLAs de disponibilidade**. Na DB1, implementamos práticas robustas de monitoramento para garantir a estabilidade e a previsibilidade dos processos de dados.
+A **Observabilidade e Monitoramento** são essenciais para garantir que os sistemas de dados operem de maneira confiável, identificando anomalias rapidamente, prevenindo falhas e assegurando a conformidade com os **SLAs de disponibilidade**. Na [DB1](https://www.db1.com.br/), implementamos práticas robustas de monitoramento para garantir a estabilidade e a previsibilidade dos processos de dados.
 
 ### Métricas e Indicadores de Performance
 
@@ -168,11 +204,11 @@ Criamos mecanismos automatizados para **detecção e resposta a falhas**, garant
 - **Automação de Respostas**: Execução de ações corretivas automáticas para falhas previsíveis.
 - **Análise de Causa Raiz**: Logs e rastreamento para entender e corrigir problemas sistêmicos.
 
-A combinação de **monitoramento contínuo, métricas bem definidas e resposta ágil** permite manter um ambiente de dados altamente disponível, confiável e seguro, alinhado às melhores práticas de governança na DB1.
+A combinação de **monitoramento contínuo, métricas bem definidas e resposta ágil** permite manter um ambiente de dados altamente disponível, confiável e seguro, alinhado às melhores práticas de governança na [DB1](https://www.db1.com.br/).
 
 ---
 
-Por fim, a Governança de Dados na DB1 é um pilar essencial para garantir segurança, qualidade e confiabilidade no uso dos dados. Adotamos um modelo padronizado baseado em frameworks consolidados, como DMBOK e Gartner, promovendo consistência entre projetos e equipes.
+Por fim, a Governança de Dados na [DB1](https://www.db1.com.br/) é um pilar essencial para garantir segurança, qualidade e confiabilidade no uso dos dados. Adotamos um modelo padronizado baseado em frameworks consolidados, como DMBOK e Gartner, promovendo consistência entre projetos e equipes.
 
 Nosso foco está na padronização, validação e gestão de acessos, garantindo que os dados sejam precisos e acessíveis apenas para as pessoas certas. Implementamos testes automatizados, controle de metadados e monitoramento contínuo, reduzindo erros e fortalecendo a rastreabilidade.
 

@@ -27,17 +27,18 @@ export const pt = defineConfig({
                     link: "data/best-practices/1_governance-data-quality",
                   },
                   { 
+                    text: "Segurança e Compliance", 
+                    link: "data/best-practices/2_security-and-compliance" 
+                  },
+                  { 
                     text: "Processamento de Dados", 
-                    link: "data/best-practices/2_engineer-processing" 
+                    link: "data/best-practices/3_engineer-processing" 
                   },
                   { 
                     text: "Modelagem e Arquitetura", 
-                    link: "data/best-practices/3_data-modeling-architecture" 
+                    link: "data/best-practices/4_data-modeling-architecture" 
                   },
-                  { 
-                    text: "Segurança e Compliance", 
-                    link: "data/best-practices/4_security-and-compliance" 
-                  },
+
                   { 
                     text: "Análise e Inteligência", 
                     link: "data/best-practices/5_analytics-and-intelligence" 

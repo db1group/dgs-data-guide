@@ -4,7 +4,7 @@ outline: deep
 
 # Jeito DB1
 
-Nosso objetivo neste material é descrever a maneira DB1 de lidar com dados, ou pelo menos como nossa equipe enxerga esse desafio.
+Nosso objetivo neste material é descrever a maneira [DB1](https://www.db1.com.br/) de lidar com dados, ou pelo menos como nossa equipe enxerga esse desafio.
 
 Somos uma empresa orientada a dados e sabemos que eles são fundamentais para a tomada de decisão e para a eficiência operacional. No entanto, não basta apenas ter dados – é essencial que sejam confiáveis, acessíveis e bem estruturados. 
 
@@ -63,7 +63,7 @@ Utilizamos o **Data HealthPanel** para avaliar a saúde dos nossos dados, base
 
 Para cada novo projeto ou integração, aplicamos nosso framework para assegurar que as melhores práticas sejam implementadas desde o início. Para cada etapa “concluída” nos processos sugeridos, uma pontuação é atribuída. Permitindo um máximo de 100 pontos para métricas e processos saudáveis.
 
-Finalmente, calculamos a pontuação de saúde do ambiente usando a média desses pilares, sendo responsabilidade dos engenheiros líderes na DB1 manter essa pontuação o mais alta possível. Ainda contamos com um sistema de "ranges" para identificar projetos e equipes que exigem atenção prioritária:
+Finalmente, calculamos a pontuação de saúde do ambiente usando a média desses pilares, sendo responsabilidade dos engenheiros líderes na [DB1](https://www.db1.com.br/) manter essa pontuação o mais alta possível. Ainda contamos com um sistema de "ranges" para identificar projetos e equipes que exigem atenção prioritária:
 
 
 |   Saúde do Ambiente    |
@@ -78,4 +78,4 @@ Dados ruins geram decisões ruins. Decisões ruins resultam em desperdício de t
 
 Nossa responsabilidade é garantir que os dados sejam um ativo estratégico e não um obstáculo. Por isso, adotamos uma abordagem única e integrada, sempre buscando melhorar e evoluir nossos processos.
 
-Longe do Hype, na DB1, dados são mais do que números – são a base do nosso sucesso.
+Longe do Hype, na [DB1](https://www.db1.com.br/), dados são mais do que números – são a base do nosso sucesso.
