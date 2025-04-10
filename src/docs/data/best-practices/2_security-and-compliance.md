@@ -125,11 +125,11 @@ Para consolidar o entendimento, a tabela abaixo resume as principais caracterís
 |------------------------|-------------------------------------------|----------------------------------------------------|----------------------------------------------------|
 | **Objetivo**           | Ocultar dados parcialmente                | Proteger confidencialidade                         | Verificar integridade; senhas |
 | **Reversível**        | ❌ Não                                  | ✅ com chave correta                                 | ❌ Não                             |
-| **Resultado**          | Dados ofuscados         | ilegível, formato diferente           | Hash fixo, ilegível                 |
+| **Resultado**          | Dados ofuscados         | Ilegível, formato diferente           | Hash fixo, ilegível                 |
 | **Precisa de chave**  | ❌ Não                                     | ✅ para en/decriptação                         | ❌ Não                                              |
-| **Uso comum**          | anonimização parcial            | Proteção de dados em trânsito/repouso              | Verificação, senhas, checksums                    |
-| **Confidencialidade** | ❌ reduz exposição               | ✅ com chave segura                           | ❌ Não                                              |
-| **Integridade**       | ❌ Não                                     | ✅ com AEAD/autenticação                     | ✅ principal foco                            |
+| **Uso comum**          | Anonimização parcial            | Proteção de dados em trânsito/repouso              | Verificação, senhas, checksums                    |
+| **Confidencialidade** | ❌ Reduz exposição               | ✅ Com chave segura                           | ❌ Não                                              |
+| **Integridade**       | ❌ Não                                     | ✅ Com AEAD/Autenticação                     | ✅ Principal foco                            |
 | **Exemplo**            | `***.***.123-45`                          | `qZ4oN9xT8rL+Jk6fW7eP0g==`                         | `a0b1c2d3e4...`
 
 
