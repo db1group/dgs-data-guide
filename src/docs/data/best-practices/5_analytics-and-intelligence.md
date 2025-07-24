@@ -6,7 +6,7 @@ outline: deep
 
 Na [DB1](https://www.db1.com.br/), para a **análise e consumo de dados**, utilizamos técnicas e metodologias que impulsionam a tomada de decisões. Transformamos dados em insights acionáveis, promovendo uma cultura data-driven em todos os níveis da organização. Por meio de ferramentas modernas, visualizações intuitivas e indicadores relevantes, entregamos valor ao negócio, antecipamos tendências e apoiamos decisões mais rápidas, precisas e eficazes.
 
-A seguir, falaremos sobre algumas dessas técnicas e metodologias que utilizamos para garantir a cultura data-driven e gerir insights sobre os dados, obtendo o máxmio valor deles.
+A seguir, falaremos sobre algumas dessas técnicas e metodologias que utilizamos para garantir a cultura data-driven e gerir insights sobre os dados, obtendo o máximo valor deles.
 
 ## Data Storytelling
 
@@ -190,7 +190,7 @@ O princípio do ponto focal afirma que qualquer elemento que se destacar visual
 
 Concluindo, os princípios de Gestalt ajudam a entender como nosso cérebro organiza informações visuais. Ao aplicar conceitos como proximidade, similaridade e ponto focal, é possível criar visualizações mais intuitivas e eficazes. Esses princípios guiam o olhar, reforçam a hierarquia da informação e facilitam a leitura dos dados.
 
-## Self-service de Dados
+## Self-service de Dados/BI
 
 Self-service de dados, ou self-service BI, é uma abordagem no campo da análise de dados que permite que os usuários finais, que podem não ter conhecimento técnico, acessem e explorem dados de forma autônoma e sem depender de especialistas em TI ou analistas de dados. Além disso, envolve o uso de ferramentas de software de BI amigáveis e intuitivas que permitem aos usuários criar relatórios, painéis de controle e análises personalizadas com facilidade.
 
