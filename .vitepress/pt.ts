@@ -40,7 +40,7 @@ export const pt = defineConfig({
                   },
 
                   { 
-                    text: "Análise e Consumo de Dados", 
+                    text: "Análise e Consumo", 
                     link: "data/best-practices/5_analytics-and-intelligence" 
                   },
                 ],
